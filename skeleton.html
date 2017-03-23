@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>General Assembly Account Creation</title>
+  <style>
+    .container {
+      margin: 0 auto;
+      max-width: 800px;
+    }
+
+    .form-group {
+      margin: 10px 0px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="general_assembly_logo.png" alt="General Assembly Logo">
+    <h1>General Assembly Account Creation</h1>
+    <p>
+      Welcome to the <a href="http://www.ga.co">General Assembly</a>. General Assembly is a global institution
+      training people all over the world in today's top technologies.
+    </p>
+    <p>
+      Please fill out the information below to create your General Assembly account. Let us know what city
+      you're in and what course you're taking. This list is for all students. Please tell us what city
+      you're in and whether you're taking the Immersive User Experience (UX) course or the Immersive
+      Web Development course.
+    </p>
+
+    <form class="form" action="success.html" method="post">
+      <div class="form-group">
+        <label for="option">City:</label>
+        <select>
+        <option value="hong-kong">Hong Kong</option>
+        <option value="london">London</option>
+        <option value="los-angeles">Los Angeles</option>
+        <option value="new-york">New York</option>
+        <option value="portland">Portland</option>
+        <option value="san-francisco">San Francisco</option>
+        <option value="seattle">Seattle</option>
+        <option value="singapore" selected>Singapore</option>
+      </select>
+      </div>
+      <div class="form-group">
+        <label for="course">Course:</label>
+        <input type="radio" name="course" value="ux">UX
+        <input type="radio" name="course" value="web-dev" checked>Web Dev
+      </div>
+      <div class="form-group">
+        <label for "name">Name:</label>
+        <input type="text" name="name"><br>
+      </div>
+      <div class="form-group">
+        <label for "email">Email:</label>
+        <input type="email" name="email"><br>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" name="password">
+      </div>
+      <div class="form-group">
+        <input type="checkbox" value="checkbox" checked> Yes, subscribe me to the General Assembly student
+        newsletter
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Subscribe">
+      </div>
+    </form>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
